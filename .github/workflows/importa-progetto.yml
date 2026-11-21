@@ -1,0 +1,53 @@
+name: Pubblica il progetto di Simone
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  pubblica:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Recupera i file della repository
+        uses: actions/checkout@v4
+
+      - name: Estrai e controlla il progetto
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          from zipfile import ZipFile, is_zipfile
+
+          archivio = Path('Ferrara_Simone_Efrem_Fase5_Repository_GitHub_PRONTA.zip')
+          if not archivio.is_file() or not is_zipfile(archivio):
+              raise SystemExit('Archivio della Fase 5 assente o non valido')
+
+          with ZipFile(archivio) as z:
+              for nome in z.namelist():
+                  p = Path(nome)
+                  if p.is_absolute() or '..' in p.parts:
+                      raise SystemExit('Percorso non consentito: ' + nome)
+              z.extractall('.')
+
+          for nome in ('README.md', 'src/panelinea/cli.py',
+                       'docs/index.html', 'dati/istanza_ferrara.json'):
+              if not Path(nome).is_file():
+                  raise SystemExit('File richiesto mancante: ' + nome)
+          archivio.unlink()
+          print('File estratti e verificati correttamente')
+          PY
+
+      - name: Pubblica i file su GitHub
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Pubblica i file del project work di Simone Ferrara"
+            git push
+          fi

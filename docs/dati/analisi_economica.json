@@ -1,0 +1,56 @@
+{
+  "studente": "Simone Efrem Ferrara",
+  "matricola": "0312300147",
+  "impresa": "PaneLinea Nord Milano",
+  "modello": "C = n × F + c_km × km totali + c_h × somma ore-autista",
+  "scenario_A": {
+    "veicoli": 1,
+    "km_totali": 31.0,
+    "ore_autista_somma": 2.5256410256410255,
+    "ore_completamento": 2.5256410256410255,
+    "minuti_completamento": 151.53846153846155,
+    "minuti_percorrenza": 71.53846153846153,
+    "noleggio_euro": 105.0,
+    "chilometrico_euro": 21.39,
+    "autisti_euro": 46.47,
+    "totale_euro": 172.86,
+    "totale_preciso_euro": "172.8617948717948717948717949",
+    "noleggio_euro_veicolo_giorno": 105.0,
+    "tariffa_euro_km": 0.69,
+    "tariffa_euro_ora": 18.4
+  },
+  "scenario_B": {
+    "veicoli": 2,
+    "km_totali": 40.8,
+    "ore_autista_somma": 3.235897435897436,
+    "ore_completamento": 1.741025641025641,
+    "minuti_completamento": 104.46153846153847,
+    "minuti_percorrenza": 94.15384615384616,
+    "noleggio_euro": 116.0,
+    "chilometrico_euro": 21.22,
+    "autisti_euro": 59.54,
+    "totale_euro": 196.76,
+    "totale_preciso_euro": "196.7565128205128205128205128",
+    "noleggio_euro_veicolo_giorno": 58.0,
+    "tariffa_euro_km": 0.52,
+    "tariffa_euro_ora": 18.4
+  },
+  "confronto": {
+    "differenza_B_meno_A_euro": 23.89,
+    "differenza_B_meno_A_precisa_euro": "23.8947179487179487179487179",
+    "differenza_km_B_meno_A": 9.8,
+    "risparmio_minuti_completamento_B": 47.07692307692308,
+    "sovraccosto_B_per_minuto_risparmiato": 0.51
+  },
+  "soglie": {
+    "costo_km_A_pareggio_euro_km": "1.460797353184449958643507030",
+    "noleggio_B_pareggio_euro_veicolo_giorno": "46.05264102564102564102564104",
+    "noleggio_A_pareggio_euro_giorno": "128.8947179487179487179487179"
+  },
+  "variabili_sensibilita": {
+    "costo_km_A": "0,40-1,80 €/km a incrementi di 0,05",
+    "noleggio_B": "35-75 €/veicolo/giorno a incrementi di 1",
+    "altre_voci": "ferme ai valori base"
+  },
+  "nota": "Distanze da itinerari stradali tra centri urbani come documentate nella Fase 1; costi e parametri operativi sono ipotesi aziendali del caso. IVA esclusa."
+}

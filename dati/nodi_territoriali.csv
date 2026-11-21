@@ -1,0 +1,7 @@
+﻿id;comune;provincia;ruolo;riferimento_per_matrice;riferimento_amministrativo;km_fonte
+D0;Sesto San Giovanni;MI;Deposito;Centro urbano del comune (punto stradale del portale fonte);Municipio, Piazza della Resistenza 20, 20099 Sesto San Giovanni (MI), Italia;Distanze tra centri urbani, non tra civici
+C1;Cinisello Balsamo;MI;Cliente;Centro urbano del comune (punto stradale del portale fonte);Piazza Confalonieri 5, 20092 Cinisello Balsamo (MI), Italia;Distanze tra centri urbani, non tra civici
+C2;Bresso;MI;Cliente;Centro urbano del comune (punto stradale del portale fonte);Municipio, Via Roma 25, 20091 Bresso (MI), Italia;Distanze tra centri urbani, non tra civici
+C3;Cologno Monzese;MI;Cliente;Centro urbano del comune (punto stradale del portale fonte);Municipio, Via Giuseppe Mazzini 9, 20093 Cologno Monzese (MI), Italia;Distanze tra centri urbani, non tra civici
+C4;Brugherio;MB;Cliente;Centro urbano del comune (punto stradale del portale fonte);Municipio, Piazza Cesare Battisti 1, 20861 Brugherio (MB), Italia;Distanze tra centri urbani, non tra civici
+C5;Monza;MB;Cliente;Centro urbano del comune (punto stradale del portale fonte);Palazzo Comunale, Piazza Trento e Trieste, 20900 Monza (MB), Italia;Distanze tra centri urbani, non tra civici

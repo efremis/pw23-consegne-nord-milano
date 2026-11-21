@@ -1,0 +1,32 @@
+test_anagrafica (test_dati.TestDati.test_anagrafica) ... ok
+test_azienda_e_deposito (test_dati.TestDati.test_azienda_e_deposito) ... ok
+test_capacita (test_dati.TestDati.test_capacita) ... ok
+test_matrice_direzionale (test_dati.TestDati.test_matrice_direzionale) ... ok
+test_nodi_e_domande (test_dati.TestDati.test_nodi_e_domande) ... ok
+test_scarta_capacita_incoerente (test_dati.TestDati.test_scarta_capacita_incoerente) ... ok
+test_scarta_distanze_csv_alterate (test_dati.TestDati.test_scarta_distanze_csv_alterate) ... ok
+test_scarta_matrice_non_valida (test_dati.TestDati.test_scarta_matrice_non_valida) ... ok
+test_scarta_matricola_altrui (test_dati.TestDati.test_scarta_matricola_altrui) ... ok
+test_tutte_fonti_e_csv_coerenti (test_dati.TestDati.test_tutte_fonti_e_csv_coerenti) ... ok
+test_cli_fuori_dalla_cartella_progetto (test_output.TestOutput.test_cli_fuori_dalla_cartella_progetto) ... ok
+test_costo_scenario_a_ricalcolato (test_output.TestOutput.test_costo_scenario_a_ricalcolato) ... ok
+test_grafi_svg_generati (test_output.TestOutput.test_grafi_svg_generati) ... ok
+test_ogni_mezzo_rientra_al_deposito (test_output.TestOutput.test_ogni_mezzo_rientra_al_deposito) ... ok
+test_ore_veicoli_paralleli (test_output.TestOutput.test_ore_veicoli_paralleli) ... ok
+test_risultati_e_costi_base (test_output.TestOutput.test_risultati_e_costi_base) ... ok
+test_tutti_csv_e_json_presenti (test_output.TestOutput.test_tutti_csv_e_json_presenti) ... ok
+test_completa_un_veicolo (test_ricerca.TestRicerca.test_completa_un_veicolo) ... ok
+test_determinismo (test_ricerca.TestRicerca.test_determinismo) ... ok
+test_matrice_non_simmetrica (test_ricerca.TestRicerca.test_matrice_non_simmetrica) ... ok
+test_nessun_cliente_mancante_duplicato (test_ricerca.TestRicerca.test_nessun_cliente_mancante_duplicato) ... ok
+test_partizioni_due_veicoli (test_ricerca.TestRicerca.test_partizioni_due_veicoli) ... ok
+test_riferimento_indipendente (test_ricerca.TestRicerca.test_riferimento_indipendente) ... ok
+test_rifiuta_rotte_duplicate_e_vuote (test_ricerca.TestRicerca.test_rifiuta_rotte_duplicate_e_vuote) ... ok
+test_scenario_a_ottimo (test_ricerca.TestRicerca.test_scenario_a_ottimo) ... ok
+test_scenario_b_ottimo (test_ricerca.TestRicerca.test_scenario_b_ottimo) ... ok
+test_tempo_corrisponde_distanza_e_scarico (test_ricerca.TestRicerca.test_tempo_corrisponde_distanza_e_scarico) ... ok
+
+----------------------------------------------------------------------
+Ran 27 tests in 1.167s
+
+OK

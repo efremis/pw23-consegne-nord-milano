@@ -1,0 +1,14 @@
+﻿scenario;voce;valore;unita;origine
+scenario_A;numero_veicoli;1;veicoli;ipotesi del caso
+scenario_A;capacita_kg_per_veicolo;900;kg;ipotesi del caso
+scenario_A;noleggio_euro_giorno_per_veicolo;105.0;EUR/gg;ipotesi del caso
+scenario_A;costo_euro_km;0.69;EUR/km;ipotesi del caso
+scenario_A;costo_autista_euro_ora;18.4;EUR/h;ipotesi del caso
+scenario_B;numero_veicoli;2;veicoli;ipotesi del caso
+scenario_B;capacita_kg_per_veicolo;450;kg;ipotesi del caso
+scenario_B;noleggio_euro_giorno_per_veicolo;58.0;EUR/gg;ipotesi del caso
+scenario_B;costo_euro_km;0.52;EUR/km;ipotesi del caso
+scenario_B;costo_autista_euro_ora;18.4;EUR/h;ipotesi del caso
+comune;velocita_media_km_h;26;km/h;ipotesi del caso
+comune;minuti_scarico_per_cliente;12;min/cliente;ipotesi del caso
+comune;minuti_carico_deposito_per_veicolo;20;min/veicolo;ipotesi del caso

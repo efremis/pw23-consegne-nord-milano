@@ -1,0 +1,21 @@
+{
+  "studente": "Simone Efrem Ferrara",
+  "matricola": "0312300147",
+  "fase": "2 - Python e ricerca esatta",
+  "file_sorgente_fase1_identici": {
+    "istanza_ferrara.json": "db7b854a2f0b4837a313a87d7eb9fd0dd20fefed4ae0c927b9af05de8835728e",
+    "matrice_distanze_direzionale_km.csv": "c00506f1811c49cfc382efd47441ed305690d19e9bcc2649dfc45bd0a5ae4f60",
+    "fonti_distanze_direzionali.csv": "8821ce3b5fd327ccc463c93450964eabecff6fb7653cfe7ffe186776ddd2d3af",
+    "clienti.csv": "561e8a8f8df5b8fafae040963bf404761cbcdbb8208d9ef7cb0b931038c67704",
+    "nodi_territoriali.csv": "4846a982775fdd09ddd4e17e360e3702acec14ca2fe68a4ba6d6d3e49a17c627",
+    "parametri_economici.csv": "7faa941dd897266bc64e66c276da576e5d62565039d1de2329e8faf9ebf927da"
+  },
+  "test_superati": 27,
+  "scenario_A_km": 31.0,
+  "scenario_B_km": 40.8,
+  "costi_base_eur": {
+    "A": 172.86,
+    "B": 196.76
+  },
+  "build_standard_library": true
+}

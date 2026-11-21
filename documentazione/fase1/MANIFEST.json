@@ -1,0 +1,12 @@
+{
+  "versione": "fase1-strade-2026-11-21",
+  "data": "2026-11-21",
+  "studente": "Simone Efrem Ferrara",
+  "matricola": "0312300147",
+  "numero_nodi": 6,
+  "archi_direzionali": 30,
+  "distanze_misurate_su_strada": "valori pubblicati da servizi di itinerario, non distanza aerea",
+  "fonte": "dati/fonti_distanze_direzionali.csv",
+  "numero_fonti": 30,
+  "nota": "Municipi documentali, non estremi civico-civico del routing"
+}

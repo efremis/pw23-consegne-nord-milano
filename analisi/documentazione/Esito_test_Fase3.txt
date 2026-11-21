@@ -1,0 +1,23 @@
+test_01_dati_e_percorsi (test_analisi_economica.TestAnalisiEconomica.test_01_dati_e_percorsi) ... ok
+test_02_dati_indipendenti_da_precedenti (test_analisi_economica.TestAnalisiEconomica.test_02_dati_indipendenti_da_precedenti) ... ok
+test_03_km_scenari (test_analisi_economica.TestAnalisiEconomica.test_03_km_scenari) ... ok
+test_04_capacita_e_quantita (test_analisi_economica.TestAnalisiEconomica.test_04_capacita_e_quantita) ... ok
+test_05_costi_A (test_analisi_economica.TestAnalisiEconomica.test_05_costi_A) ... ok
+test_06_costi_B (test_analisi_economica.TestAnalisiEconomica.test_06_costi_B) ... ok
+test_07_costo_autisti_sommato (test_analisi_economica.TestAnalisiEconomica.test_07_costo_autisti_sommato) ... ok
+test_08_tempo_operativo (test_analisi_economica.TestAnalisiEconomica.test_08_tempo_operativo) ... ok
+test_09_composizione_costi (test_analisi_economica.TestAnalisiEconomica.test_09_composizione_costi) ... ok
+test_10_differenza_totale (test_analisi_economica.TestAnalisiEconomica.test_10_differenza_totale) ... ok
+test_11_soglia_km (test_analisi_economica.TestAnalisiEconomica.test_11_soglia_km) ... ok
+test_12_soglia_noleggio_B (test_analisi_economica.TestAnalisiEconomica.test_12_soglia_noleggio_B) ... ok
+test_13_sensibilita_monotona (test_analisi_economica.TestAnalisiEconomica.test_13_sensibilita_monotona) ... ok
+test_14_tabella_prezzo_km (test_analisi_economica.TestAnalisiEconomica.test_14_tabella_prezzo_km) ... ok
+test_15_tabella_noleggio_B (test_analisi_economica.TestAnalisiEconomica.test_15_tabella_noleggio_B) ... ok
+test_16_due_variabili (test_analisi_economica.TestAnalisiEconomica.test_16_due_variabili) ... ok
+test_17_esempio_prezzi (test_analisi_economica.TestAnalisiEconomica.test_17_esempio_prezzi) ... ok
+test_18_test_schema_json (test_analisi_economica.TestAnalisiEconomica.test_18_test_schema_json) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.004s
+
+OK

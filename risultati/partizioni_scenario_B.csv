@@ -1,0 +1,16 @@
+﻿clienti_mezzo_1;clienti_mezzo_2;kg_1;kg_2;ammissibile;motivo
+C1;C2,C3,C4,C5;170;610;False;Capacita superata
+C1,C2;C3,C4,C5;285;495;False;Capacita superata
+C1,C3;C2,C4,C5;315;465;False;Capacita superata
+C1,C4;C2,C3,C5;360;420;True;OK
+C1,C5;C2,C3,C4;330;450;True;OK
+C1,C2,C3;C4,C5;430;350;True;OK
+C1,C2,C4;C3,C5;475;305;False;Capacita superata
+C1,C2,C5;C3,C4;445;335;True;OK
+C1,C3,C4;C2,C5;505;275;False;Capacita superata
+C1,C3,C5;C2,C4;475;305;False;Capacita superata
+C1,C4,C5;C2,C3;520;260;False;Capacita superata
+C1,C2,C3,C4;C5;620;160;False;Capacita superata
+C1,C2,C3,C5;C4;590;190;False;Capacita superata
+C1,C2,C4,C5;C3;635;145;False;Capacita superata
+C1,C3,C4,C5;C2;665;115;False;Capacita superata

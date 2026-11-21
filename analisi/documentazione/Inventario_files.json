@@ -1,0 +1,126 @@
+{
+  "studente": "Simone Efrem Ferrara",
+  "matricola": "0312300147",
+  "files": [
+    {
+      "file": "Analisi_Economica_Ferrara.xlsx",
+      "sha256": "cbcd4ee0017ffcad4ef07f5d10d96869e7c5a2ae5c1d08c5398f187002d8e510",
+      "bytes": 18393
+    },
+    {
+      "file": "README.md",
+      "sha256": "524b7fdb7a8693603534b2111c4a70c28259617c02d01b4ea4d5d1b80639bcfc",
+      "bytes": 4404
+    },
+    {
+      "file": "dati/fonti_distanze_direzionali.csv",
+      "sha256": "8821ce3b5fd327ccc463c93450964eabecff6fb7653cfe7ffe186776ddd2d3af",
+      "bytes": 6230
+    },
+    {
+      "file": "dati/istanza_ferrara.json",
+      "sha256": "db7b854a2f0b4837a313a87d7eb9fd0dd20fefed4ae0c927b9af05de8835728e",
+      "bytes": 7924
+    },
+    {
+      "file": "dati/matrice_distanze_direzionale_km.csv",
+      "sha256": "c00506f1811c49cfc382efd47441ed305690d19e9bcc2649dfc45bd0a5ae4f60",
+      "bytes": 207
+    },
+    {
+      "file": "dati/parametri_economici.csv",
+      "sha256": "7faa941dd897266bc64e66c276da576e5d62565039d1de2329e8faf9ebf927da",
+      "bytes": 847
+    },
+    {
+      "file": "dati/soluzioni_ottime.json",
+      "sha256": "04eb06b76befa067539e43d2bba8a136ec76cdaeb4c1c03b0db9bbfedbe03643",
+      "bytes": 4831
+    },
+    {
+      "file": "documentazione/Esito_riesecuzione_test_Fase2.txt",
+      "sha256": "71b50bc066d088b43598aff8ff48cf573338f1398c49ab4b5c6c5b54975de5bc",
+      "bytes": 2481
+    },
+    {
+      "file": "documentazione/Esito_test_Fase3.txt",
+      "sha256": "9068c1d044e340e53b183da2a191e6d4deda631f1cd70002e0ead354ffa15a06",
+      "bytes": 1945
+    },
+    {
+      "file": "documentazione/Metodo_e_fonti.md",
+      "sha256": "3eba2aff7bd481e9943f6ea6393ce990655dde09128cd1ca25d5aa1a410c6307",
+      "bytes": 3130
+    },
+    {
+      "file": "documentazione/Relazione_Analisi_Economica.pdf",
+      "sha256": "ec8e9af0c502afcb37dcf80045289699dcc259f76c9b14bf07a37e6872ce8abe",
+      "bytes": 421754
+    },
+    {
+      "file": "risultati/analisi_economica.json",
+      "sha256": "cab911acab55a08caab9d27606f91c0aa470a705ac1e1ad0b5ae509ddbecb222",
+      "bytes": 2102
+    },
+    {
+      "file": "risultati/costi_scenari.csv",
+      "sha256": "a0b38ab77ac478643e3d051c97bb636ac004129bd37c7e3d174825d880b2e280",
+      "bytes": 252
+    },
+    {
+      "file": "risultati/grafici/composizione_costi.png",
+      "sha256": "65d9d990074db504ca947f265edcef9f12646869871f14c6a85e60b0adee913a",
+      "bytes": 48704
+    },
+    {
+      "file": "risultati/grafici/matrice_due_variabili.png",
+      "sha256": "5ae121910f4cced633f2c504b98fe7e448e5be63c813c0d081fe5c8a1eaaa520",
+      "bytes": 104917
+    },
+    {
+      "file": "risultati/grafici/sensibilita_costo_km_A.png",
+      "sha256": "ad3141629785cbaf0996c23683f9144a2a5c94d62e8168ec9c9c2bb88bd4994b",
+      "bytes": 83817
+    },
+    {
+      "file": "risultati/grafici/sensibilita_costo_km_A.svg",
+      "sha256": "f0a56f80456b438055b2f8a6514d8fbb75fa7d5e9c30c5451b15c2a0493332d9",
+      "bytes": 3232
+    },
+    {
+      "file": "risultati/grafici/sensibilita_noleggio_B.png",
+      "sha256": "6d1f44c8d7afb9dc67c25f029d4655d210d58faa08fbbab14a891647e89f3766",
+      "bytes": 87951
+    },
+    {
+      "file": "risultati/grafici/sensibilita_noleggio_B.svg",
+      "sha256": "d1855039718869f685adda042d78cddaf950c4fa9c085826a9300f92b14debe8",
+      "bytes": 3534
+    },
+    {
+      "file": "risultati/sensibilita_combinata.csv",
+      "sha256": "78ebbea6f41e125ba6e0e54b65d812ffa59a96a2a9d15d46194f57163c91472e",
+      "bytes": 2841
+    },
+    {
+      "file": "risultati/sensibilita_costo_km_A.csv",
+      "sha256": "26fa773e15df66a2e4dd1054de1262f917d79d1e3f5fcbc69da712d286753ad1",
+      "bytes": 894
+    },
+    {
+      "file": "risultati/sensibilita_noleggio_B.csv",
+      "sha256": "84936e5a83b318712aa6205ce2b91ed7decc28ff40bd51373bec0f7659079f7b",
+      "bytes": 1293
+    },
+    {
+      "file": "src/analisi_economica.py",
+      "sha256": "9ec77d0d460ebedf1d1ad120a7376bbe8c77b46d9ffe333c947fec3cd9493e4c",
+      "bytes": 13484
+    },
+    {
+      "file": "tests/test_analisi_economica.py",
+      "sha256": "14cd928d48a1e9939ea35479f6a1592b9c9150f12497d2724b503706507f0d07",
+      "bytes": 4136
+    }
+  ]
+}

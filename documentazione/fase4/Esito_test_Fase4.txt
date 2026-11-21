@@ -1,0 +1,3 @@
+Test statici Python: 26/26 superati.
+Test browser desktop e mobile: caricamento, calcolo iniziale, commutazione dei grafi A/B, interazione costo chilometrico A, noleggio B, costo orario, ripristino e assenza di errori JavaScript: superati.
+Copie web/ e docs/ identiche. Nessuna risorsa esterna richiesta.

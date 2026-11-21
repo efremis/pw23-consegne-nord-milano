@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1210" height="509" viewBox="0 0 1210 509">
+<defs><marker id="arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto"><path d="M0 0 L7 3.5 L0 7 z" fill="#64748b"/></marker></defs>
+<rect width="1210" height="509" fill="#f8fafc"/>
+<text x="55" y="45" font-size="24" font-family="DejaVu Sans, sans-serif" font-weight="bold" fill="#0f172a">Scenario B  |  due veicoli da 450 kg  |  40,8 km</text>
+<text x="55" y="76" font-size="15" font-family="DejaVu Sans, sans-serif" fill="#475569">Grafo diretto: i percorsi partono dal deposito D0 e vi ritornano. Schema non in scala geografica.</text>
+<g font-family="DejaVu Sans, sans-serif"><text x="55" y="117" fill="#124e80" font-weight="bold" font-size="18">Mezzo 1 - 430 kg</text><line x1="125.0" y1="185" x2="327.5" y2="185" stroke="#124e80" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="226.2" y="167" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">5.0 km</text>
+<line x1="377.5" y1="185" x2="580.0" y2="185" stroke="#124e80" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="478.8" y="167" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">4.0 km</text>
+<line x1="630.0" y1="185" x2="832.5" y2="185" stroke="#124e80" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="731.2" y="167" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">8.0 km</text>
+<line x1="882.5" y1="185" x2="1085.0" y2="185" stroke="#124e80" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="983.8" y="167" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">4.0 km</text>
+<circle cx="100.0" cy="185" r="27" fill="#124e80" stroke="#124e80" stroke-width="3"/>
+<text x="100.0" y="191" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">D0</text>
+<text x="100.0" y="240" text-anchor="middle" font-size="14" fill="#172033">Sesto / San Giovanni</text>
+<circle cx="352.5" cy="185" r="27" fill="#ffffff" stroke="#124e80" stroke-width="3"/>
+<text x="352.5" y="191" text-anchor="middle" font-size="17" font-weight="bold" fill="#124e80">C2</text>
+<text x="352.5" y="240" text-anchor="middle" font-size="14" fill="#172033">Bresso</text>
+<circle cx="605.0" cy="185" r="27" fill="#ffffff" stroke="#124e80" stroke-width="3"/>
+<text x="605.0" y="191" text-anchor="middle" font-size="17" font-weight="bold" fill="#124e80">C1</text>
+<text x="605.0" y="240" text-anchor="middle" font-size="14" fill="#172033">Cinisello Balsamo</text>
+<circle cx="857.5" cy="185" r="27" fill="#ffffff" stroke="#124e80" stroke-width="3"/>
+<text x="857.5" y="191" text-anchor="middle" font-size="17" font-weight="bold" fill="#124e80">C3</text>
+<text x="857.5" y="240" text-anchor="middle" font-size="14" fill="#172033">Cologno Monzese</text>
+<circle cx="1110.0" cy="185" r="27" fill="#124e80" stroke="#124e80" stroke-width="3"/>
+<text x="1110.0" y="191" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">D0</text>
+<text x="1110.0" y="240" text-anchor="middle" font-size="14" fill="#172033">Sesto / San Giovanni</text><text x="55" y="325" fill="#9d4b14" font-weight="bold" font-size="18">Mezzo 2 - 350 kg</text><line x1="125.0" y1="385" x2="411.7" y2="385" stroke="#9d4b14" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="268.3" y="367" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">7.0 km</text>
+<line x1="461.7" y1="385" x2="748.3" y2="385" stroke="#9d4b14" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="605.0" y="367" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">5.0 km</text>
+<line x1="798.3" y1="385" x2="1085.0" y2="385" stroke="#9d4b14" stroke-width="3" marker-end="url(#arrow)"/>
+<text x="941.7" y="367" font-size="16" font-weight="600" text-anchor="middle" fill="#334155">7.8 km</text>
+<circle cx="100.0" cy="385" r="27" fill="#9d4b14" stroke="#9d4b14" stroke-width="3"/>
+<text x="100.0" y="391" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">D0</text>
+<text x="100.0" y="440" text-anchor="middle" font-size="14" fill="#172033">Sesto / San Giovanni</text>
+<circle cx="436.7" cy="385" r="27" fill="#ffffff" stroke="#9d4b14" stroke-width="3"/>
+<text x="436.7" y="391" text-anchor="middle" font-size="17" font-weight="bold" fill="#9d4b14">C4</text>
+<text x="436.7" y="440" text-anchor="middle" font-size="14" fill="#172033">Brugherio</text>
+<circle cx="773.3" cy="385" r="27" fill="#ffffff" stroke="#9d4b14" stroke-width="3"/>
+<text x="773.3" y="391" text-anchor="middle" font-size="17" font-weight="bold" fill="#9d4b14">C5</text>
+<text x="773.3" y="440" text-anchor="middle" font-size="14" fill="#172033">Monza</text>
+<circle cx="1110.0" cy="385" r="27" fill="#9d4b14" stroke="#9d4b14" stroke-width="3"/>
+<text x="1110.0" y="391" text-anchor="middle" font-size="17" font-weight="bold" fill="#ffffff">D0</text>
+<text x="1110.0" y="440" text-anchor="middle" font-size="14" fill="#172033">Sesto / San Giovanni</text></g></svg>

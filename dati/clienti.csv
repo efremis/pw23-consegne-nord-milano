@@ -1,0 +1,7 @@
+﻿id;comune;provincia;tipologia;kg;descrizione
+D0;Sesto San Giovanni;MI;Deposito;0;Deposito logistico simulato nell’area urbana del comune di residenza.
+C1;Cinisello Balsamo;MI;Cliente;170;Negozio alimentare indipendente (simulato), consegna mattutina.
+C2;Bresso;MI;Cliente;115;Punto vendita di quartiere (simulato), fornitura di pane e focacce.
+C3;Cologno Monzese;MI;Cliente;145;Piccolo esercizio di ristorazione (simulato), prodotti da forno confezionati.
+C4;Brugherio;MB;Cliente;190;Rivendita specializzata (simulata), assortimento misto.
+C5;Monza;MB;Cliente;160;Market cittadino (simulato), consegna giornaliera.

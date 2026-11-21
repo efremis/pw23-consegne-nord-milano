@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 470" role="img" aria-label="sensibilita_noleggio_B.svg">
+<rect width="940" height="470" fill="white"/>
+<line x1="90" y1="387.0" x2="908" y2="387.0" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="391.0" font-size="12" text-anchor="end" fill="#344054">143</text>
+<line x1="90" y1="318.6" x2="908" y2="318.6" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="322.6" font-size="12" text-anchor="end" fill="#344054">162</text>
+<line x1="90" y1="250.2" x2="908" y2="250.2" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="254.2" font-size="12" text-anchor="end" fill="#344054">181</text>
+<line x1="90" y1="181.8" x2="908" y2="181.8" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="185.8" font-size="12" text-anchor="end" fill="#344054">200</text>
+<line x1="90" y1="113.4" x2="908" y2="113.4" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="117.4" font-size="12" text-anchor="end" fill="#344054">220</text>
+<line x1="90" y1="45.0" x2="908" y2="45.0" stroke="#e1e7ec" stroke-width="1"/>
+<text x="78" y="49.0" font-size="12" text-anchor="end" fill="#344054">239</text>
+<text x="90.0" y="410" text-anchor="middle" font-size="12" fill="#344054">35.00</text>
+<text x="253.6" y="410" text-anchor="middle" font-size="12" fill="#344054">43.00</text>
+<text x="417.2" y="410" text-anchor="middle" font-size="12" fill="#344054">51.00</text>
+<text x="580.8" y="410" text-anchor="middle" font-size="12" fill="#344054">59.00</text>
+<text x="744.4" y="410" text-anchor="middle" font-size="12" fill="#344054">67.00</text>
+<text x="908.0" y="410" text-anchor="middle" font-size="12" fill="#344054">75.00</text>
+<polyline points="90.0,279.7 110.5,279.7 130.9,279.7 151.3,279.7 171.8,279.7 192.2,279.7 212.7,279.7 233.1,279.7 253.6,279.7 274.1,279.7 294.5,279.7 315.0,279.7 335.4,279.7 355.9,279.7 376.3,279.7 396.8,279.7 417.2,279.7 437.6,279.7 458.1,279.7 478.5,279.7 499.0,279.7 519.5,279.7 539.9,279.7 560.3,279.7 580.8,279.7 601.2,279.7 621.7,279.7 642.2,279.7 662.6,279.7 683.0,279.7 703.5,279.7 724.0,279.7 744.4,279.7 764.8,279.7 785.3,279.7 805.8,279.7 826.2,279.7 846.7,279.7 867.1,279.7 887.5,279.7 908.0,279.7" fill="none" stroke="#087e8b" stroke-width="3.5" stroke-linejoin="round"/>
+<rect x="580" y="18" width="12" height="12" fill="#087e8b"/><text x="598" y="29" font-size="14" fill="#182c40">A - un furgone</text>
+<polyline points="90.0,358.5 110.5,351.4 130.9,344.2 151.3,337.1 171.8,330.0 192.2,322.9 212.7,315.8 233.1,308.6 253.6,301.5 274.1,294.4 294.5,287.2 315.0,280.1 335.4,273.0 355.9,265.9 376.3,258.8 396.8,251.6 417.2,244.5 437.6,237.4 458.1,230.2 478.5,223.1 499.0,216.0 519.5,208.9 539.9,201.8 560.3,194.6 580.8,187.5 601.2,180.4 621.7,173.2 642.2,166.1 662.6,159.0 683.0,151.9 703.5,144.8 724.0,137.6 744.4,130.5 764.8,123.4 785.3,116.2 805.8,109.1 826.2,102.0 846.7,94.9 867.1,87.8 887.5,80.6 908.0,73.5" fill="none" stroke="#c76233" stroke-width="3.5" stroke-linejoin="round"/>
+<rect x="755" y="18" width="12" height="12" fill="#c76233"/><text x="773" y="29" font-size="14" fill="#182c40">B - due furgoni</text>
+<line x1="316.0" y1="45" x2="316.0" y2="387" stroke="#48576b" stroke-width="1.5" stroke-dasharray="7 5"/>
+<text x="323.0" y="63" font-size="12" fill="#344054">Pareggio: 46.053</text>
+<text x="470.0" y="452" text-anchor="middle" font-size="15" fill="#182c40">Noleggio furgone B (EUR/mezzo/giorno)</text>
+<text transform="translate(24 235.0) rotate(-90)" text-anchor="middle" font-size="15" fill="#182c40">Costo giornaliero (EUR)</text>
+</svg>

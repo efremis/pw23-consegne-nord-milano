@@ -1,0 +1,18 @@
+{
+  "progetto": "PaneLinea Nord Milano — Project Work 23",
+  "studente": "Simone Efrem Ferrara",
+  "matricola": "0312300147",
+  "data": "2026-11-21",
+  "fase": 4,
+  "sito_web": "web/index.html",
+  "sito_github_pages": "docs/index.html",
+  "sito_offline": "Sito_Offline_Apri_Questo.html",
+  "risultati": {
+    "km_A": 31,
+    "km_B": 40.8,
+    "euro_A": 172.86,
+    "euro_B": 196.76
+  },
+  "fonti": "web/dati/fonti_distanze_direzionali.csv",
+  "test_automatici": 26
+}

@@ -1,0 +1,222 @@
+{
+  "schema_version": "2.0.0",
+  "data_rilevazione": "2026-11-21",
+  "titolo": "Distribuzione prodotti da forno nell’area nord-est di Milano",
+  "studente": {
+    "nome": "Simone Efrem",
+    "cognome": "Ferrara",
+    "matricola": "0312300147",
+    "residenza_comune": "Sesto San Giovanni",
+    "provincia": "MI"
+  },
+  "universita": {
+    "ateneo": "Università Telematica Pegaso",
+    "corso": "Informatica per le Aziende Digitali (L-31)",
+    "tema_numero": 1,
+    "tema_titolo": "La digitalizzazione dell’impresa",
+    "traccia_numero": 23,
+    "traccia_titolo": "Sviluppo di un codice Python per la pianificazione e il confronto economico dei percorsi di consegna di un’impresa agroalimentare"
+  },
+  "azienda": {
+    "denominazione": "PaneLinea Nord Milano",
+    "natura": "impresa simulata a fini di studio",
+    "settore": "Distribuzione B2B di pane, focacce e altri prodotti da forno già confezionati",
+    "clienti": "punti vendita e piccola ristorazione simulati",
+    "unita_domanda": "kg di merce consegnata per giornata tipo"
+  },
+  "nodi": [
+    {
+      "id": "D0",
+      "comune": "Sesto San Giovanni",
+      "provincia": "MI",
+      "tipologia": "Deposito",
+      "url_istituzionale": "https://www.comune.sestosangiovanni.mi.it/it/assetluoghi/asset-luoghi/965/municipio",
+      "kg": 0,
+      "descrizione": "Deposito logistico simulato nell’area urbana del comune di residenza.",
+      "sede_municipale_documentale": "Municipio, Piazza della Resistenza 20, 20099 Sesto San Giovanni (MI), Italia",
+      "riferimento": "Centro urbano di Sesto San Giovanni; fermata cliente o deposito simulata nello stesso comune"
+    },
+    {
+      "id": "C1",
+      "comune": "Cinisello Balsamo",
+      "provincia": "MI",
+      "tipologia": "Cliente",
+      "url_istituzionale": "https://www.comune.cinisello-balsamo.mi.it/sol/spip.php?connect=sito&id_article=10558&page=article",
+      "kg": 170,
+      "descrizione": "Negozio alimentare indipendente (simulato), consegna mattutina.",
+      "sede_municipale_documentale": "Piazza Confalonieri 5, 20092 Cinisello Balsamo (MI), Italia",
+      "riferimento": "Centro urbano di Cinisello Balsamo; fermata cliente o deposito simulata nello stesso comune"
+    },
+    {
+      "id": "C2",
+      "comune": "Bresso",
+      "provincia": "MI",
+      "tipologia": "Cliente",
+      "url_istituzionale": "https://www.comune.bresso.mi.it/it/vivere/palazzo-comunale-1",
+      "kg": 115,
+      "descrizione": "Punto vendita di quartiere (simulato), fornitura di pane e focacce.",
+      "sede_municipale_documentale": "Municipio, Via Roma 25, 20091 Bresso (MI), Italia",
+      "riferimento": "Centro urbano di Bresso; fermata cliente o deposito simulata nello stesso comune"
+    },
+    {
+      "id": "C3",
+      "comune": "Cologno Monzese",
+      "provincia": "MI",
+      "tipologia": "Cliente",
+      "url_istituzionale": "https://www.comune.colognomonzese.mi.it/it/vivere/municipio-sede-via-mazzini-ala-sinistra-e-centrale",
+      "kg": 145,
+      "descrizione": "Piccolo esercizio di ristorazione (simulato), prodotti da forno confezionati.",
+      "sede_municipale_documentale": "Municipio, Via Giuseppe Mazzini 9, 20093 Cologno Monzese (MI), Italia",
+      "riferimento": "Centro urbano di Cologno Monzese; fermata cliente o deposito simulata nello stesso comune"
+    },
+    {
+      "id": "C4",
+      "comune": "Brugherio",
+      "provincia": "MB",
+      "tipologia": "Cliente",
+      "url_istituzionale": "https://www.comune.brugherio.mb.it/it/vivere/municipio",
+      "kg": 190,
+      "descrizione": "Rivendita specializzata (simulata), assortimento misto.",
+      "sede_municipale_documentale": "Municipio, Piazza Cesare Battisti 1, 20861 Brugherio (MB), Italia",
+      "riferimento": "Centro urbano di Brugherio; fermata cliente o deposito simulata nello stesso comune"
+    },
+    {
+      "id": "C5",
+      "comune": "Monza",
+      "provincia": "MB",
+      "tipologia": "Cliente",
+      "url_istituzionale": "https://www.comune.monza.it/it/vivere/744295",
+      "kg": 160,
+      "descrizione": "Market cittadino (simulato), consegna giornaliera.",
+      "sede_municipale_documentale": "Palazzo Comunale, Piazza Trento e Trieste, 20900 Monza (MB), Italia",
+      "riferimento": "Centro urbano di Monza; fermata cliente o deposito simulata nello stesso comune"
+    }
+  ],
+  "ordine_nodi": [
+    "D0",
+    "C1",
+    "C2",
+    "C3",
+    "C4",
+    "C5"
+  ],
+  "matrice_distanze_km": [
+    [
+      0,
+      6.0,
+      5.0,
+      4.0,
+      7.0,
+      8.0
+    ],
+    [
+      5.0,
+      0,
+      5.0,
+      8.0,
+      10.0,
+      9.0
+    ],
+    [
+      5.0,
+      4.0,
+      0,
+      9.0,
+      12.2,
+      12.0
+    ],
+    [
+      4.0,
+      9.0,
+      9.0,
+      0,
+      4.0,
+      10.0
+    ],
+    [
+      8.3,
+      11.0,
+      12.1,
+      4.0,
+      0,
+      5.0
+    ],
+    [
+      7.8,
+      8.0,
+      11.0,
+      10.0,
+      7.0,
+      0
+    ]
+  ],
+  "qualita_distanze": {
+    "stato": "30 distanze direzionali di itinerari stradali pubblicati da servizi online; nessun valore calcolato in linea d’aria o interpolato",
+    "criterio_geografico": "da centro urbano a centro urbano (come definito dai servizi fonte); i civici municipali sono solo riferimenti amministrativi",
+    "precisione_km": "distanze pubblicate per lo più in km interi; tre valori a 0,1 km rilevati da Rome2Rio e DistanzeKM; non si attribuisce precisione metrica",
+    "simmetria": "non imposta: A-B e B-A rilevati separatamente, differenze coerenti con senso di marcia e itinerari alternativi",
+    "limite": "i percorsi reali tra specifici depositi e sedi commerciali non possono essere definiti senza i civici operativi, simulati in questo studio; il dataset rappresenta distanze stradali tra centri urbani",
+    "fonte_puntuale": "dati/fonti_distanze_direzionali.csv",
+    "data_consultazione": "2026-11-21",
+    "metodo": "pagine di itinerario stradale online, modalità auto, non chilometri in linea d’aria",
+    "ipotesi_esplicitamente_escluse": [
+      "distanza euclidea",
+      "media delle due direzioni",
+      "copia automatica della distanza del ritorno"
+    ]
+  },
+  "scenari_veicoli": {
+    "scenario_A": {
+      "numero_veicoli": 1,
+      "capacita_kg_per_veicolo": 900,
+      "noleggio_euro_giorno_per_veicolo": 105.0,
+      "costo_euro_km": 0.69,
+      "costo_autista_euro_ora": 18.4,
+      "descrizione": "Un furgone a cassone per prodotti alimentari confezionati"
+    },
+    "scenario_B": {
+      "numero_veicoli": 2,
+      "capacita_kg_per_veicolo": 450,
+      "noleggio_euro_giorno_per_veicolo": 58.0,
+      "costo_euro_km": 0.52,
+      "costo_autista_euro_ora": 18.4,
+      "descrizione": "Due furgoni leggeri identici per prodotti alimentari confezionati"
+    }
+  },
+  "parametri_operativi": {
+    "velocita_media_km_h": 26.0,
+    "minuti_scarico_per_cliente": 12,
+    "minuti_carico_deposito_per_veicolo": 20,
+    "mezzo_trasporto": "furgoni commerciali per alimenti confezionati",
+    "valuta": "EUR",
+    "iva": "esclusa",
+    "pedaggi": "esclusi, non previsti nel modello base",
+    "costo_chilometrico": "include carburante, manutenzione e usura: ipotesi del caso",
+    "giornata_tipo": "un giro mattutino; ogni mezzo inizia e termina al deposito"
+  },
+  "vincoli": {
+    "un_cliente_esattamente_una_volta": true,
+    "percorsi_iniziano_e_terminano_al_deposito": true,
+    "domanda_kg_totale": 780,
+    "limiti_capacita_kg": {
+      "scenario_A": 900,
+      "scenario_B": 450
+    },
+    "tutti_due_veicoli_utilizzati_scenario_B": true
+  },
+  "esempio_partizione_ammissibile_due_veicoli": {
+    "mezzo_1": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "carico_1_kg": 430,
+    "mezzo_2": [
+      "C4",
+      "C5"
+    ],
+    "carico_2_kg": 350
+  },
+  "prossimo_step": "enumerazione completa usando matrice direzionale; nessun percorso ottimo simulato nella Fase 1",
+  "contesto_traccia": "istanza con deposito nel comune di residenza e cinque comuni limitrofi reali"
+}

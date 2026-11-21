@@ -1,0 +1,165 @@
+{
+  "identificazione": {
+    "studente": "Simone Efrem Ferrara",
+    "matricola": "0312300147",
+    "impresa": "PaneLinea Nord Milano",
+    "deposito": "Sesto San Giovanni",
+    "clienti": [
+      {
+        "id": "C1",
+        "comune": "Cinisello Balsamo",
+        "domanda_kg": 170
+      },
+      {
+        "id": "C2",
+        "comune": "Bresso",
+        "domanda_kg": 115
+      },
+      {
+        "id": "C3",
+        "comune": "Cologno Monzese",
+        "domanda_kg": 145
+      },
+      {
+        "id": "C4",
+        "comune": "Brugherio",
+        "domanda_kg": 190
+      },
+      {
+        "id": "C5",
+        "comune": "Monza",
+        "domanda_kg": 160
+      }
+    ],
+    "domanda_totale_kg": 780
+  },
+  "obiettivo": "distanza stradale complessiva minima (matrice direzionale Fase 1)",
+  "origine_dati": "dati/istanza_ferrara.json; fonti per i 30 archi in dati/fonti_distanze_direzionali.csv",
+  "parametri_operativi": {
+    "velocita_media_km_h": 26.0,
+    "minuti_scarico_per_cliente": 12,
+    "minuti_carico_deposito_per_veicolo": 20,
+    "mezzo_trasporto": "furgoni commerciali per alimenti confezionati",
+    "valuta": "EUR",
+    "iva": "esclusa",
+    "pedaggi": "esclusi, non previsti nel modello base",
+    "costo_chilometrico": "include carburante, manutenzione e usura: ipotesi del caso",
+    "giornata_tipo": "un giro mattutino; ogni mezzo inizia e termina al deposito"
+  },
+  "scenario_A": {
+    "veicoli": 1,
+    "capacita_per_veicolo_kg": 900,
+    "percorsi": [
+      {
+        "nodi": [
+          "D0",
+          "C3",
+          "C4",
+          "C5",
+          "C1",
+          "C2",
+          "D0"
+        ],
+        "comuni": [
+          "Sesto San Giovanni",
+          "Cologno Monzese",
+          "Brugherio",
+          "Monza",
+          "Cinisello Balsamo",
+          "Bresso",
+          "Sesto San Giovanni"
+        ],
+        "numero_clienti": 5,
+        "kg_consegnati": 780,
+        "km": 31.0,
+        "ore_impegnate_inclusi_carico_e_scarico": 2.52564,
+        "minuti_impegnati": 151.54
+      }
+    ],
+    "km_totali": 31.0,
+    "ore_autista_somma": 2.52564,
+    "ore_fino_ultima_consegna_e_rientro": 2.52564,
+    "costi_base": {
+      "noleggio_euro": 105.0,
+      "chilometrico_euro": 21.39,
+      "autisti_euro": 46.47,
+      "totale_euro": 172.86,
+      "totale_non_arrotondato_euro": "172.8617948717948717948717949",
+      "formula": "noleggio per veicolo x numero veicoli + costo/km x km totali + costo/h x ore-autista sommate"
+    }
+  },
+  "scenario_B": {
+    "veicoli": 2,
+    "capacita_per_veicolo_kg": 450,
+    "percorsi": [
+      {
+        "nodi": [
+          "D0",
+          "C2",
+          "C1",
+          "C3",
+          "D0"
+        ],
+        "comuni": [
+          "Sesto San Giovanni",
+          "Bresso",
+          "Cinisello Balsamo",
+          "Cologno Monzese",
+          "Sesto San Giovanni"
+        ],
+        "numero_clienti": 3,
+        "kg_consegnati": 430,
+        "km": 21.0,
+        "ore_impegnate_inclusi_carico_e_scarico": 1.74103,
+        "minuti_impegnati": 104.46
+      },
+      {
+        "nodi": [
+          "D0",
+          "C4",
+          "C5",
+          "D0"
+        ],
+        "comuni": [
+          "Sesto San Giovanni",
+          "Brugherio",
+          "Monza",
+          "Sesto San Giovanni"
+        ],
+        "numero_clienti": 2,
+        "kg_consegnati": 350,
+        "km": 19.8,
+        "ore_impegnate_inclusi_carico_e_scarico": 1.49487,
+        "minuti_impegnati": 89.69
+      }
+    ],
+    "km_totali": 40.8,
+    "ore_autista_somma": 3.2359,
+    "ore_fino_ultima_consegna_e_rientro": 1.74103,
+    "costi_base": {
+      "noleggio_euro": 116.0,
+      "chilometrico_euro": 21.22,
+      "autisti_euro": 59.54,
+      "totale_euro": 196.76,
+      "totale_non_arrotondato_euro": "196.7565128205128205128205128",
+      "formula": "noleggio per veicolo x numero veicoli + costo/km x km totali + costo/h x ore-autista sommate"
+    }
+  },
+  "confronto": {
+    "differenza_km_B_meno_A": 9.8,
+    "differenza_costo_B_meno_A_euro": 23.89,
+    "risparmio_ore_makespan_B_vs_A": 0.78462,
+    "nota": "Ore-autista sommate per il costo; tempo del giro piu lungo per la fine delle operazioni con due furgoni in parallelo."
+  },
+  "enumerazione": {
+    "numero_clienti": 5,
+    "permutazioni_valutate_scenario_A": 120,
+    "partizioni_non_vuote_non_equivalenti_scenario_B": 15,
+    "partizioni_ammissibili_scenario_B": 4,
+    "coppie_di_rotte_valutate_scenario_B": 48,
+    "duplicazioni_per_scambio_veicoli_eliminate": true,
+    "criterio": "minimizzazione della distanza stradale complessiva su matrice direzionale",
+    "tie_break": "ordinamento lessicografico degli ID dei clienti a pari distanza"
+  },
+  "precisazione": "Distanze stradali tra centri urbani prese dalle fonti documentate della Fase 1; parametri economici e operativi riferiti al caso aziendale simulato."
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#103c35">
+  <meta name="description" content="Pianificazione delle consegne di PaneLinea Nord Milano: percorsi ottimali, matrice stradale e confronto economico tra uno e due furgoni. Progetto di Simone Efrem Ferrara.">
+  <title>PaneLinea | Percorsi di consegna e analisi dei costi</title>
+  <link rel="stylesheet" href="assets/styles.css">
+  <script defer src="assets/project-data.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenuto">Vai al contenuto</a>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#inizio" aria-label="PaneLinea, torna all'inizio">
+        <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="brand-names"><strong>PaneLinea</strong><small>Nord Milano · Studio logistico</small></span>
+      </a>
+      <nav class="desktop-nav" aria-label="Navigazione principale">
+        <a href="#contesto">Contesto</a>
+        <a href="#dati">Dati</a>
+        <a href="#percorsi">Percorsi</a>
+        <a href="#economia">Costi</a>
+        <a href="#fonti">Metodo e fonti</a>
+      </nav>
+      <a class="header-cta" href="#economia">Esplora il confronto <span aria-hidden="true">↗</span></a>
+    </div>
+  </header>
+  <main id="contenuto">
+    <section class="hero" id="inizio" aria-labelledby="hero-title">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <div class="eyebrow eyebrow-light"><span class="eyebrow-dot"></span> SIMULAZIONE · LOGISTICA DISTRIBUTIVA</div>
+          <h1 id="hero-title">La strada migliore.<br><em>Il costo giusto.</em></h1>
+          <p>Un confronto concreto fra <strong>un furgone capiente</strong> e <strong>due mezzi leggeri</strong> per organizzare le consegne di prodotti da forno nell'area nord-est di Milano.</p>
+          <div class="hero-actions">
+            <a class="button button-sand" href="#percorsi">Scopri i percorsi <span aria-hidden="true">↗</span></a>
+            <a class="button button-ghost" href="#dati">Esamina i dati <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-note"><span class="small-line"></span> Deposito: Sesto San Giovanni (MI) <span aria-hidden="true">·</span> 5 consegne giornaliere</div>
+        </div>
+        <div class="hero-visual" aria-label="Schema stilizzato di sei nodi collegati nella rete di distribuzione">
+          <div class="visual-head"><span>RETE DI DISTRIBUZIONE</span><span>AREA NORD MILANO <span class="visual-live">●</span></span></div>
+          <svg viewBox="0 0 480 390" role="img" aria-labelledby="network-title network-desc" class="network-graphic">
+            <title id="network-title">Schema dei sei nodi dello studio</title>
+            <desc id="network-desc">Il deposito Sesto San Giovanni è collegato a cinque località: Cinisello Balsamo, Bresso, Cologno Monzese, Brugherio e Monza. Lo schema non è in scala.</desc>
+            <defs>
+              <linearGradient id="net-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffffff" stop-opacity=".10"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/></linearGradient>
+            </defs>
+            <rect x="0" y="0" width="480" height="390" rx="16" fill="url(#net-bg)"/>
+            <g fill="none" stroke="#b4cfbc" stroke-opacity=".42" stroke-width="2.2" stroke-linecap="round">
+              <path d="M237 173 L96 90 L114 273 L237 173 L361 80 L385 260 L237 173"/>
+              <path d="M96 90 L361 80 M114 273 L385 260 M96 90 L385 260" stroke-dasharray="5 10" stroke-opacity=".22"/>
+            </g>
+            <circle cx="237" cy="173" r="60" fill="#d6bb81" opacity=".12"/><circle cx="237" cy="173" r="43" fill="#e7c889" opacity=".2"/>
+            <g fill="#e7c889" stroke="#e7c889"><circle cx="237" cy="173" r="18"/><circle cx="96" cy="90" r="9"/><circle cx="114" cy="273" r="9"/><circle cx="361" cy="80" r="9"/><circle cx="385" cy="260" r="9"/><circle cx="249" cy="318" r="9"/></g>
+            <path d="M114 273 L249 318 L385 260" stroke="#b4cfbc" stroke-opacity=".42" stroke-width="2.2" fill="none"/>
+            <circle cx="237" cy="173" r="5" fill="#103c35"/>
+            <g font-size="13" font-weight="600" font-family="system-ui, sans-serif" fill="#fff9eb">
+              <text x="237" y="221" text-anchor="middle">SESTO SAN GIOVANNI</text><text x="237" y="238" text-anchor="middle" font-weight="400" fill="#d9e9df" font-size="11">DEPOSITO</text>
+              <text x="58" y="71">BRESSO</text><text x="31" y="301">CINISELLO</text><text x="345" y="61">MONZA</text><text x="365" y="288">BRUGHERIO</text><text x="203" y="351">COLOGNO</text>
+            </g>
+          </svg>
+          <div class="visual-foot"><span>6 NODI</span><span>30 CONNESSIONI DIREZIONALI</span><span>1 DEPOSITO</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom" aria-hidden="true"></div>
+    </section>
+
+    <section class="quick-metrics shell" aria-label="Indicatori principali">
+      <div class="metric"><span class="metric-symbol">01 / CLIENTI</span><strong id="metric-clienti">5</strong><small>località da servire</small></div>
+      <div class="metric"><span class="metric-symbol">02 / CARICO</span><strong id="metric-kg">780 <span>kg</span></strong><small>domanda giornaliera</small></div>
+      <div class="metric"><span class="metric-symbol">03 / OTTIMO A</span><strong id="metric-km-a">31 <span>km</span></strong><small>un solo furgone</small></div>
+      <div class="metric"><span class="metric-symbol">04 / OTTIMO B</span><strong id="metric-km-b">40,8 <span>km</span></strong><small>due furgoni</small></div>
+    </section>
+
+    <section class="section shell" id="contesto" aria-labelledby="contesto-title">
+      <div class="section-topline"><span>01 — IL CONTESTO</span><span>PRODOTTI DA FORNO · DISTRIBUZIONE B2B</span></div>
+      <div class="section-title-grid">
+        <div><div class="eyebrow">UN'IMPRESA, DUE MODI DI CONSEGNARE</div><h2 id="contesto-title">Consegne fresche,<br><em>decisioni misurabili.</em></h2></div>
+        <div class="lead-stack"><p>PaneLinea Nord Milano è un'impresa simulata che distribuisce pane, focacce e prodotti da forno confezionati a negozi alimentari e piccoli esercizi di ristorazione.</p><p>La giornata tipo prevede cinque consegne, con partenza e rientro presso un deposito situato nel comune di Sesto San Giovanni. Il problema consiste nel trovare i giri con la minore percorrenza complessiva, rispettando il carico massimo dei veicoli.</p></div>
+      </div>
+      <div class="process-tiles">
+        <article class="process-card"><div class="tile-icon">01</div><h3>Definire la rete</h3><p>Sei nodi, una matrice direzionale e una quantità da consegnare per ciascun cliente.</p></article>
+        <article class="process-card"><div class="tile-icon">02</div><h3>Esaminare i giri</h3><p>Enumerazione completa delle sequenze e delle ripartizioni fra veicoli, con controllo delle capacità.</p></article>
+        <article class="process-card"><div class="tile-icon">03</div><h3>Misurare la scelta</h3><p>Confronto di chilometri, tempi e costi, anche al variare dei prezzi unitari.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-cream" id="dati" aria-labelledby="dati-title">
+      <div class="shell">
+        <div class="section-topline"><span>02 — L'ISTANZA</span><span>DEPOSITO + CINQUE CLIENTI</span></div>
+        <div class="section-title-grid">
+          <div><div class="eyebrow">DATI DI PARTENZA</div><h2 id="dati-title">La rete di distribuzione,<br><em>in numeri.</em></h2></div>
+          <div class="lead-stack"><p>Le distanze sono tratte da itinerari stradali pubblicati fra i centri urbani. I valori sono direzionali: il tragitto di andata può avere una lunghezza diversa dal ritorno.</p><p>Le quantità e le caratteristiche operative costituiscono l'istanza del caso aziendale simulato.</p></div>
+        </div>
+        <div class="data-panels">
+          <article class="data-panel">
+            <div class="panel-heading"><div><span class="kicker">DOMANDA GIORNALIERA</span><h3>Clienti e carichi</h3></div><span class="pill">780 kg totali</span></div>
+            <div class="table-wrap"><table class="data-table"><thead><tr><th>Codice</th><th>Località</th><th class="align-right">Merce</th></tr></thead><tbody id="client-table"></tbody></table></div>
+            <div class="panel-foot"><span>Deposito <strong>D0 · Sesto San Giovanni</strong></span><span>Consegne B2B</span></div>
+          </article>
+          <article class="data-panel">
+            <div class="panel-heading"><div><span class="kicker">MEZZI DISPONIBILI</span><h3>Capacità e tariffe</h3></div><span class="pill">2 alternative</span></div>
+            <div class="vehicle-card"><div class="vehicle-index vehicle-a">A</div><div><h4>Un furgone capiente</h4><p>900 kg di capacità · € 105/giorno · € 0,69/km</p></div><strong>1×</strong></div>
+            <div class="vehicle-card"><div class="vehicle-index vehicle-b">B</div><div><h4>Due furgoni leggeri</h4><p>450 kg ciascuno · € 58/giorno ciascuno · € 0,52/km</p></div><strong>2×</strong></div>
+            <div class="data-callout"><strong>Perché servono due mezzi?</strong><br>La merce da consegnare pesa 780 kg, superiore ai 450 kg trasportabili da un solo furgone leggero.</div>
+          </article>
+        </div>
+        <div class="matrix-panel">
+          <div class="panel-heading"><div><span class="kicker">GRAFO PESATO E ORIENTATO</span><h3>Matrice delle distanze</h3></div><a class="subtle-link" href="dati/matrice_distanze_direzionale_km.csv" download>Scarica CSV <span aria-hidden="true">↓</span></a></div>
+          <div class="table-wrap"><table class="matrix-table" aria-label="Matrice direzionale delle distanze stradali in chilometri"><thead id="matrix-head"></thead><tbody id="matrix-body"></tbody></table></div>
+          <p class="matrix-caption">Valori in chilometri; ogni riga rappresenta il nodo di partenza, ogni colonna il nodo di arrivo. D0 = Sesto San Giovanni; C1 = Cinisello Balsamo; C2 = Bresso; C3 = Cologno Monzese; C4 = Brugherio; C5 = Monza.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="percorsi" aria-labelledby="percorsi-title">
+      <div class="section-topline"><span>03 — I PERCORSI OTTIMI</span><span>ENUMERAZIONE COMPLETA</span></div>
+      <div class="section-title-grid">
+        <div><div class="eyebrow">TSP + VEHICLE ROUTING</div><h2 id="percorsi-title">Tutte le possibilità.<br><em>Il percorso più corto.</em></h2></div>
+        <div class="lead-stack"><p>Il codice Python confronta tutte le sequenze possibili per il veicolo unico. Per i due veicoli, esamina le ripartizioni non equivalenti e scarta quelle che superano la capacità di 450 kg per mezzo.</p><p>L'obiettivo è ridurre la <strong>distanza complessiva</strong>, non il costo: la valutazione economica viene effettuata successivamente, a parità di percorsi ottimi trovati.</p></div>
+      </div>
+      <div class="search-summary" aria-label="Statistiche di enumerazione"><div><strong>120</strong><span>permutazioni, scenario A</span></div><div><strong>15</strong><span>partizioni distinte, scenario B</span></div><div><strong>4</strong><span>partizioni fattibili</span></div><div><strong>48</strong><span>coppie di giri valutate</span></div></div>
+      <div class="routes-box">
+        <div class="route-switch" role="group" aria-label="Seleziona lo scenario dei percorsi">
+          <button class="route-tab is-active" type="button" data-route="a" aria-pressed="true"><span class="tab-dot dot-a"></span> Scenario A <small>Un veicolo</small></button>
+          <button class="route-tab" type="button" data-route="b" aria-pressed="false"><span class="tab-dot dot-b"></span> Scenario B <small>Due veicoli</small></button>
+        </div>
+        <section class="route-content" id="route-panel-a" aria-label="Percorso scenario A">
+          <div class="route-overview"><div><span class="kicker">PERCORRENZA MINIMA</span><strong>31 km</strong><p>Un unico giro · carico 780 su 900 kg</p></div><div class="route-badge"><span class="circle-icon">✓</span><span>Tutti e cinque i clienti serviti<br>con un solo mezzo</span></div></div>
+          <div class="route-image-frame"><img src="assets/grafo-a.svg" width="1210" height="278" alt="Grafo orientato dello scenario A: Sesto San Giovanni, Cologno Monzese, Brugherio, Monza, Cinisello Balsamo, Bresso e ritorno a Sesto San Giovanni, totale 31 chilometri." loading="lazy"></div>
+          <div class="route-details"><span><strong>Carico:</strong> 780 kg</span><span><strong>Durata del giro:</strong> 151,54 min</span><span><strong>Capacità residua:</strong> 120 kg</span></div>
+        </section>
+        <section class="route-content" id="route-panel-b" aria-label="Percorsi scenario B" hidden>
+          <div class="route-overview"><div><span class="kicker">PERCORRENZA TOTALE</span><strong>40,8 km</strong><p>Due giri simultanei · 430 kg + 350 kg</p></div><div class="route-badge"><span class="circle-icon">✓</span><span>Entrambi i mezzi sotto<br>il limite di 450 kg</span></div></div>
+          <div class="route-image-frame"><img src="assets/grafo-b.svg" width="1210" height="509" alt="Grafo scenario B: mezzo 1, Sesto San Giovanni, Bresso, Cinisello Balsamo, Cologno Monzese e ritorno, 21 chilometri; mezzo 2, Sesto San Giovanni, Brugherio, Monza e ritorno, 19,8 chilometri." loading="lazy"></div>
+          <div class="route-details"><span><strong>Mezzo 1:</strong> 21 km · 430 kg</span><span><strong>Mezzo 2:</strong> 19,8 km · 350 kg</span><span><strong>Fine di entrambi i giri:</strong> 104,46 min</span></div>
+        </section>
+      </div>
+      <p class="footnote">I grafi illustrano l'ordine delle fermate e le distanze direzionali rilevate; non rappresentano la forma geografica della rete viaria.</p>
+    </section>
+
+    <section class="section section-dark" id="economia" aria-labelledby="economia-title">
+      <div class="shell">
+        <div class="section-topline section-topline-light"><span>04 — IL CONFRONTO ECONOMICO</span><span>ANALISI INTERATTIVA</span></div>
+        <div class="section-title-grid">
+          <div><div class="eyebrow eyebrow-light">COSTO VS TEMPO</div><h2 id="economia-title">Quanto costa<br><em>guadagnare tempo?</em></h2></div>
+          <div class="lead-stack"><p>Un furgone percorre meno chilometri e richiede un solo noleggio. Due mezzi, lavorando contemporaneamente, terminano prima le consegne ma comportano più ore-autista complessive.</p><p>Modifica i prezzi qui sotto: la pagina ricalcola i costi senza cambiare i percorsi, le distanze o la capacità dei mezzi.</p></div>
+        </div>
+        <div class="decision-grid">
+          <article class="result-card result-card-a"><span class="kicker">SCENARIO A · UN FURGONE</span><div class="result-main" id="total-a">€ 172,86</div><div class="result-sub"><span>31 km</span><span>151,54 min</span></div><div class="result-track"><div id="progress-a" style="width:88%"></div></div><p>Noleggio, costo chilometrico e ore-autista sommate.</p></article>
+          <article class="result-card result-card-b"><span class="kicker">SCENARIO B · DUE FURGONI</span><div class="result-main" id="total-b">€ 196,76</div><div class="result-sub"><span>40,8 km</span><span>104,46 min</span></div><div class="result-track"><div id="progress-b" style="width:100%"></div></div><p>Due noleggi; tempi dei mezzi conteggiati separatamente per il costo.</p></article>
+          <article class="result-insight" aria-live="polite"><span class="kicker">SCENARIO PIÙ CONVENIENTE</span><strong id="winner-label">A · Un furgone</strong><span class="insight-number" id="winner-saving">€ 23,89</span><p id="winner-copy">di differenza economica a favore del furgone unico.</p><div class="insight-time">I due mezzi concludono i giri <strong>47,08 minuti prima</strong>.</div></article>
+        </div>
+        <div class="analysis-layout">
+          <article class="control-panel">
+            <div class="panel-heading"><div><span class="kicker">MODIFICA I PARAMETRI</span><h3>Simula nuove tariffe</h3></div><button type="button" id="reset-prices" class="reset-button">↺ Ripristina</button></div>
+            <div class="range-item"><div class="range-top"><label for="tariff-a">Costo al km · furgone A</label><output id="val-a" for="tariff-a">0,69 €/km</output></div><input type="range" id="tariff-a" min="0.40" max="1.80" step="0.01" value="0.69"><div class="range-limits"><span>0,40 €/km</span><span>1,80 €/km</span></div></div>
+            <div class="range-item"><div class="range-top"><label for="rent-b">Noleggio · ogni furgone B</label><output id="val-b" for="rent-b">58,00 €/giorno</output></div><input type="range" id="rent-b" min="35" max="75" step="0.50" value="58"><div class="range-limits"><span>35 €/giorno</span><span>75 €/giorno</span></div></div>
+            <div class="range-item"><div class="range-top"><label for="wage">Costo orario · autista</label><output id="val-w" for="wage">18,40 €/ora</output></div><input type="range" id="wage" min="10" max="30" step="0.20" value="18.40"><div class="range-limits"><span>10 €/ora</span><span>30 €/ora</span></div></div>
+            <div class="formula-block"><span>FORMULA DI CALCOLO</span><div>C = n × F + km × c<sub>km</sub> + ore-autista × c<sub>h</sub></div><p>Il chilometraggio rimane quello minimo calcolato con enumerazione completa.</p></div>
+          </article>
+          <article class="control-panel" aria-label="Ripartizione dinamica dei costi"><div class="panel-heading"><div><span class="kicker">DOVE VANNO LE RISORSE</span><h3>Composizione dei costi</h3></div></div>
+            <div id="cost-breakdown" class="breakdown"></div>
+            <div class="legend"><span><i class="legend-dot legend-rent"></i>Noleggio</span><span><i class="legend-dot legend-km"></i>Percorrenza</span><span><i class="legend-dot legend-wage"></i>Autisti</span></div>
+            <div class="threshold-card"><span class="kicker">PUNTO DI PAREGGIO DINAMICO</span><strong id="breakeven-km">1,461 €/km</strong><p>Tariffa chilometrica A alla quale i due costi si equivalgono, mantenendo ferme le altre tariffe correnti.</p></div>
+          </article>
+        </div>
+        <div class="charts-layout">
+          <article class="chart-card"><div class="chart-card-top"><div><span class="kicker">ANALISI DI SENSIBILITÀ 01</span><h3>Se aumenta il costo al km del furgone grande</h3></div><div class="chart-legend"><span><i class="line-token token-a"></i> A</span><span><i class="line-token token-b"></i> B</span></div></div><div id="chart-a" class="chart-slot" role="img" aria-label="Grafico dei costi A e B al variare del costo al chilometro del furgone grande."></div><p>La linea B rimane orizzontale rispetto a questa variabile. L'incrocio indica quando cambia la scelta economica.</p></article>
+          <article class="chart-card"><div class="chart-card-top"><div><span class="kicker">ANALISI DI SENSIBILITÀ 02</span><h3>Se varia il noleggio giornaliero dei furgoni piccoli</h3></div><div class="chart-legend"><span><i class="line-token token-a"></i> A</span><span><i class="line-token token-b"></i> B</span></div></div><div id="chart-b" class="chart-slot" role="img" aria-label="Grafico dei costi A e B al variare del noleggio unitario dei furgoni piccoli."></div><p>Il costo B varia per entrambi i mezzi; la linea A rimane costante rispetto a questo prezzo.</p></article>
+        </div>
+        <p class="dark-note">Le tariffe operative sono parametri dell'impresa simulata. L'analisi non modifica i percorsi ottimi: esamina la convenienza economica delle due soluzioni già determinate.</p>
+      </div>
+    </section>
+
+    <section class="section shell" id="fonti" aria-labelledby="fonti-title">
+      <div class="section-topline"><span>05 — METODO E FONTI</span><span>TRACCIABILITÀ DEI RISULTATI</span></div>
+      <div class="section-title-grid"><div><div class="eyebrow">DATI, REGOLE E RIPRODUCIBILITÀ</div><h2 id="fonti-title">Ogni numero<br><em>ha un'origine.</em></h2></div><div class="lead-stack"><p>La matrice contiene 30 distanze direzionali tra i sei centri urbani, ricavate da servizi di itinerari stradali. Le fonti consultate sono disponibili in un file dedicato.</p><p>I costi derivano dalle formule e dai parametri dell'istanza. I percorsi sono stati individuati dal programma Python mediante enumerazione completa, senza euristiche.</p></div></div>
+      <div class="source-tiles">
+        <article><span>01 / DATI</span><h3>Istanza e fonti stradali</h3><p>Quantità, matrice direzionale, caratteristiche dei veicoli e documentazione delle percorrenze.</p><a href="dati/istanza_ferrara.json" download>Scarica l'istanza JSON <span aria-hidden="true">↗</span></a><a href="dati/fonti_distanze_direzionali.csv" download>Scarica le 30 fonti CSV <span aria-hidden="true">↗</span></a></article>
+        <article><span>02 / PERCORSI</span><h3>Soluzioni dell'algoritmo</h3><p>Sequenze ottime dei giri, carichi, chilometri, tempi e conteggi delle combinazioni esaminate.</p><a href="dati/soluzioni_ottime.json" download>Scarica i risultati JSON <span aria-hidden="true">↗</span></a></article>
+        <article><span>03 / ECONOMIA</span><h3>Analisi dei costi</h3><p>Tariffe, costi dei due scenari, confronto di convenienza e valori delle soglie di pareggio.</p><a href="dati/analisi_economica.json" download>Scarica l'analisi JSON <span aria-hidden="true">↗</span></a></article>
+      </div>
+      <div class="method-strip"><span class="method-icon">i</span><p><strong>Ambito delle distanze.</strong> I chilometri rappresentano itinerari stradali pubblicati tra centri urbani; i punti di consegna sono simulati e non corrispondono a indirizzi commerciali specifici. La matrice mantiene distinti andata e ritorno. Rilevazione: 21 novembre 2026.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="shell footer-inner"><div><div class="footer-brand">PaneLinea <span>Nord Milano</span></div><p>Studio di pianificazione e confronto economico delle consegne agroalimentari.</p></div><div class="footer-meta"><strong>Simone Efrem Ferrara</strong><span>Matricola 0312300147</span><span>Informatica per le Aziende Digitali (L-31)</span><span>Project Work · Traccia n. 23</span></div><a href="#inizio" class="back-top">Torna su ↑</a></div></footer>
+</body>
+</html>

@@ -1,0 +1,31 @@
+﻿origine_id;origine_comune;destinazione_id;destinazione_comune;km_stradali;fonte;url;criterio;data_consultazione
+D0;Sesto San Giovanni;C1;Cinisello Balsamo;6.0;DistanzeChilometriche;https://distanzechilometriche.net/sesto%20san%20giovanni-cinisello%20balsamo/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+D0;Sesto San Giovanni;C2;Bresso;5.0;DistanzeChilometriche;https://distanzechilometriche.net/sesto%20san%20giovanni-bresso/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+D0;Sesto San Giovanni;C3;Cologno Monzese;4.0;DistanzeChilometriche;https://distanzechilometriche.net/sesto%20san%20giovanni-cologno%20monzese/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+D0;Sesto San Giovanni;C4;Brugherio;7.0;PercorsoMigliore;https://www.percorsomigliore.com/distanza/sesto-san-giovanni/brugherio/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+D0;Sesto San Giovanni;C5;Monza;8.0;DistanzeChilometriche;https://distanzechilometriche.net/sesto%20san%20giovanni-monza/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C1;Cinisello Balsamo;D0;Sesto San Giovanni;5.0;DistanzeChilometriche;https://distanzechilometriche.net/cinisello%20balsamo-sesto%20san%20giovanni/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C1;Cinisello Balsamo;C2;Bresso;5.0;DistanzeChilometriche;https://distanzechilometriche.net/cinisello%20balsamo-bresso/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C1;Cinisello Balsamo;C3;Cologno Monzese;8.0;DistanzeChilometriche;https://cdn.distanzechilometriche.net/cinisello%20balsamo-cologno%20monzese/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C1;Cinisello Balsamo;C4;Brugherio;10.0;DistanzeChilometriche;https://distanzechilometriche.net/cinisello%20balsamo-brugherio/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C1;Cinisello Balsamo;C5;Monza;9.0;DistanzeChilometriche;https://distanzechilometriche.net/cinisello%20balsamo-monza/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C2;Bresso;D0;Sesto San Giovanni;5.0;DistanzeChilometriche;https://distanzechilometriche.net/bresso-sesto%20san%20giovanni/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C2;Bresso;C1;Cinisello Balsamo;4.0;DistanzeChilometriche;https://distanzechilometriche.net/bresso-cinisello%20balsamo/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C2;Bresso;C3;Cologno Monzese;9.0;DistanzeChilometriche;https://cdn-7.distanzechilometriche.net/bresso-cologno%20monzese/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C2;Bresso;C4;Brugherio;12.2;Rome2Rio;https://www.rome2rio.com/it/s/Bresso/Brugherio;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C2;Bresso;C5;Monza;12.0;DistanzeChilometriche;https://distanzechilometriche.net/bresso-monza/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C3;Cologno Monzese;D0;Sesto San Giovanni;4.0;DistanzeChilometriche;https://cdn.distanzechilometriche.net/cologno%20monzese-sesto%20san%20giovanni/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C3;Cologno Monzese;C1;Cinisello Balsamo;9.0;DistanzeChilometriche;https://cdn-7.distanzechilometriche.net/cologno%20monzese-cinisello%20balsamo/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C3;Cologno Monzese;C2;Bresso;9.0;DistanzeChilometriche;https://distanzechilometriche.net/cologno%20monzese-bresso/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C3;Cologno Monzese;C4;Brugherio;4.0;DistanzeChilometriche;https://distanzechilometriche.net/cologno%20monzese-brugherio/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C3;Cologno Monzese;C5;Monza;10.0;DistanzeChilometriche;https://distanzechilometriche.net/cologno%20monzese-monza/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C4;Brugherio;D0;Sesto San Giovanni;8.3;Rome2Rio (taxi su strada);https://www.rome2rio.com/it/s/Brugherio/Sesto-San-Giovanni;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C4;Brugherio;C1;Cinisello Balsamo;11.0;DistanzeChilometriche;https://distanzechilometriche.net/brugherio-cinisello%20balsamo/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C4;Brugherio;C2;Bresso;12.1;Rome2Rio;https://www.rome2rio.com/it/s/Brugherio/Bresso;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C4;Brugherio;C3;Cologno Monzese;4.0;DistanzeChilometriche;https://cdn-6.distanzechilometriche.net/brugherio-cologno%20monzese/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C4;Brugherio;C5;Monza;5.0;DistanzeChilometriche;https://distanzechilometriche.net/brugherio-monza/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C5;Monza;D0;Sesto San Giovanni;7.8;DistanzeKM (7,75 km arrotondati);https://www.distanzekm.com/distanza-monza-e-sesto-san-giovanni;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C5;Monza;C1;Cinisello Balsamo;8.0;DistanzeChilometriche;https://distanzechilometriche.net/monza-cinisello%20balsamo/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C5;Monza;C2;Bresso;11.0;DistanzeChilometriche;https://distanzechilometriche.net/monza-bresso/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C5;Monza;C3;Cologno Monzese;10.0;DistanzeChilometriche;https://cdn-5.distanzechilometriche.net/monza-cologno%20monzese/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
+C5;Monza;C4;Brugherio;7.0;DistanzeChilometriche;https://cdn-6.distanzechilometriche.net/monza-brugherio/;"Itinerario stradale pubblicato tra centri urbani; direzione rilevata";2026-11-21
